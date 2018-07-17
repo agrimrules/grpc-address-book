@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+//package io.agrim.AddressBook;
+
+/*
+ * Saves a person in our address book.
+ */
+service Person {
+  rpc Add(PersonBody) returns (PersonIndex) {}
+  rpc Remove(PersonIndex) returns (PersonBody) {}
+  rpc Update(PersonBody) returns (PersonBody) {}
+  rpc Get(PersonIndex) returns (PersonBody) {}
+}
+
+//service RemovePerson {
+//}
+//
+//service UpdatePerson {
+//}
+//
+//service GetPerson {
+//}
+
+message PersonBody {
+  int32 Index = 1;
+  string Name = 2;
+  int32 PhoneNumber = 3;
+  string Email = 4;
+}
+
+message PersonIndex {
+  int32 index = 1;
+}
