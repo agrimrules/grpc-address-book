@@ -1,12 +1,7 @@
 package io.agrim.AddressBook
-
-import com.datastax.driver.core.Cluster
-import com.datastax.driver.mapping.MappingManager
 import person.{PersonBody, PersonGrpc, PersonIndex}
 
 import scala.concurrent.Future
-import io.grpc.{ServerBuilder, ServerServiceDefinition}
-
 
 class AddressBookService extends PersonGrpc.Person {
 

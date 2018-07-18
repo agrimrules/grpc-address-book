@@ -3,7 +3,6 @@ package io.agrim.AddressBook
 import person.{PersonGrpc, PersonIndex}
 import io.grpc.ManagedChannelBuilder
 
-import scala.concurrent.Future
 import scala.util.{Failure, Success}
 import scala.concurrent.ExecutionContext.Implicits.global
 
@@ -14,7 +13,7 @@ object client {
     val op = client.get(PersonIndex(index = 1))
     op.onComplete {
       case Success(value) => println(s"Got the callback, value = $value")
-      case Failure(e) => e.printStackTrace
+      case Failure(e) => e.printStackTrace()
     }
   }
 }

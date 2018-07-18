@@ -1,9 +1,4 @@
 package io.agrim.AddressBook
-
-import io.agrim.AddressBook.AddressBookService
-import person.PersonGrpc
-import scala.concurrent.{ ExecutionContext, Future}
-
 import io.grpc.{ServerBuilder, ServerServiceDefinition}
 
 class server {
@@ -17,9 +12,4 @@ class server {
 
     server.awaitTermination()
   }
-
-//  def main(args: Array[String]): Unit = {
-//    val ssd = PersonGrpc.bindService(new AddressBookService(), ExecutionContext.global)
-//    runServer(ssd)
-//  }
 }
