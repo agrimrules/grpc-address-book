@@ -3,3 +3,7 @@
 <hr>
 
 Creating an example address book app while learning [grpc](https://grpc.io) .
+
+
+
+[![security status](https://www.meterian.io/badge/gh/agrimrules/grpc-address-book.git/security)](https://www.meterian.io/report/gh/agrimrules/grpc-address-book.git) [![stability status](https://www.meterian.io/badge/gh/agrimrules/grpc-address-book.git/stability)](https://www.meterian.io/report/gh/agrimrules/grpc-address-book.git)
